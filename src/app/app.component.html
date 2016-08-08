@@ -1,3 +1,20 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-layout fullscreen>
+  <md-sidenav #sidenav mode="push">
+    Sidebar here
+  </md-sidenav>
+
+  <md-toolbar color="primary" class="md-primary">
+  <button md-raised-button color="primary" (click)="sidenav.open()">menu</button>
+
+   {{title}}
+   
+<!--    <button md-raised-button color="accent" (click)="settings.toggle()">Settings</button> -->
+  </md-toolbar>
+ <div dir="ltr" class="dashboard-content">
+     <!--  <router-outlet></router-outlet> -->
+	 Dashboard Content
+    </div>
+   <md-sidenav #settings mode="side" align="end" opened="true">
+        Settings
+    </md-sidenav>
+</md-sidenav-layout>
