@@ -1,4 +1,4 @@
-<md-sidenav-layout fullscreen>
+<md-sidenav-layout fullscreen class="dashboard-content">
   <md-sidenav #sidenav mode="push">
     Sidebar here
   </md-sidenav>
@@ -10,11 +10,60 @@
    
 <!--    <button md-raised-button color="accent" (click)="settings.toggle()">Settings</button> -->
   </md-toolbar>
- <div dir="ltr" class="dashboard-content">
+
      <!--  <router-outlet></router-outlet> -->
-	 Dashboard Content
-    </div>
-   <md-sidenav #settings mode="side" align="end" opened="true">
+	<md-content class="md-padding" layout="row" layout-wrap layout-align="center start">
+<div class="card-container">
+  <md-card class="md-card-flat">
+    <md-card-title>Easily customizable</md-card-title>
+	<md-card-content>
+	 <md-icon svgIcon="thumb-up" class="green"></md-icon>
+	 </md-card-content>
+    <md-card-actions>
+      <button md-button>First</button>
+      <button md-button>Second</button>
+    </md-card-actions>
+  </md-card>
+
+  <md-card class="md-card-flat">
+    <md-card-title>Easily customizable</md-card-title>
+    <md-card-actions>
+      <button md-button>First</button>
+      <button md-button>Second</button>
+    </md-card-actions>
+  </md-card>
+
+  <md-card class="md-card-flat">
+    <md-card-title>Easily customizable</md-card-title>
+    <md-card-actions>
+      <button md-button>First</button>
+      <button md-button>Second</button>
+    </md-card-actions>
+  </md-card>
+
+  <md-card class="md-card-flat">
+    <md-card-title>Easily customizable</md-card-title>
+    <md-card-actions>
+      <button md-button>First</button>
+      <button md-button>Second</button>
+    </md-card-actions>
+  </md-card>
+
+  <md-card class="md-card-flat">
+    <md-card-title>Easily customizable</md-card-title>
+    <md-card-actions>
+      <button md-button>First</button>
+      <button md-button>Second</button>
+    </md-card-actions>
+  </md-card>
+</div>
+
+  
+  
+ 
+</md-content>
+
+   <md-sidenav #settings mode="side" align="end" opened="true" class="settingsPanel">
         Settings
     </md-sidenav>
 </md-sidenav-layout>

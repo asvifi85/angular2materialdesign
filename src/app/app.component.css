@@ -2,17 +2,43 @@ md-sidenav {
   width: 200px;
   background:blue;
 }
-md-sidenav-layout{
-	height:100%
-	
-}
-md-content.dashboard-content {
-background-color: transparent;
+
+md-sidenav-layout.dashboard-content {
+background-color: #f0f0f0;
 }
 .settingsPanel{
-	background:#f0f0f0;
+	background:#fff;
 	width:300px;
 	padding:10px;
 	box-sizing:border-box;
 	text-align:left;
 }
+.card-container {
+
+  display: -webkit-flex; /* Safari */
+    -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-flow: row wrap;
+	
+}
+.card-container  md-card {
+    margin: 15px;
+    width: 240px;
+	min-height:150px;
+	background:rgba(250,250,250,0.6);
+  }
+md-card:hover {
+     box-shadow: none
+}
+.card-container   img {
+    background-color: gray;
+  }
+.card-blue {
+  background-color: #b0becc;
+
+}
+
+.card-blue   md-card-actions {
+    display: flex;
+    flex-direction: row;
+  }
